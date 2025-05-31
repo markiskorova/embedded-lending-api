@@ -4,6 +4,17 @@ A Python-based microservice that simulates an embedded lending platform. Designe
 
 ---
 
+## 📦 Tech Stack
+
+- **Backend**: Django + DRF
+- **Auth**: JWT (SimpleJWT)
+- **Database**: PostgreSQL
+- **Infrastructure**: Docker, Terraform (AWS)
+- **CI/CD**: GitHub Actions
+- **Optional**: GraphQL, Celery, Stripe (test mode)
+
+---
+
 ## 🗺️ Roadmap
 
 ### ✅ Phase 1 – MVP (Core API)
@@ -28,17 +39,6 @@ A Python-based microservice that simulates an embedded lending platform. Designe
 - [ ] Webhook support with retry & audit logging
 - [ ] Simulated Stripe payout/repayment integration
 - [ ] Admin dashboard (Django Admin or React)
-
----
-
-## 📦 Tech Stack
-
-- **Backend**: Django + DRF
-- **Auth**: JWT (SimpleJWT)
-- **Database**: PostgreSQL
-- **Infrastructure**: Docker, Terraform (AWS)
-- **CI/CD**: GitHub Actions
-- **Optional**: GraphQL, Celery, Stripe (test mode)
 
 ---
 
