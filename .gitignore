@@ -24,3 +24,5 @@ venv/
 # Docker
 *.pid
 *.sock
+
+project-status.md

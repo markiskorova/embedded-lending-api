@@ -1,31 +1,31 @@
 # Embedded Lending API
 
-A Python-based microservice that simulates an embedded lending platform. Designed for partner platforms to offer simplified merchant loans via REST APIs.
+A Python-based backend service that simulates an embedded lending platform. Inspired by real-world tools like Parafin and Stripe Capital, this project allows merchants to apply for and manage loans through secure REST APIs.
 
 ---
 
 ## 📦 Tech Stack
 
-- **Backend**: Django + DRF
+- **Backend**: Django + Django REST Framework (DRF)
 - **Auth**: JWT (SimpleJWT)
-- **Database**: PostgreSQL
+- **Database**: SQLite (dev), PostgreSQL (prod)
 - **Infrastructure**: Docker, Terraform (AWS)
 - **CI/CD**: GitHub Actions
-- **Optional**: GraphQL, Celery, Stripe (test mode)
+- **Optional**: GraphQL (graphene-django), Celery + Redis for background tasks
 
 ---
 
 ## 🗺️ Roadmap
 
 ### ✅ Phase 1 – MVP (Core API)
-- [ ] Django project and app scaffolding
-- [ ] JWT-based merchant authentication
-- [ ] Merchant registration/login endpoints
-- [ ] Loan application submission API
-- [ ] Basic underwriting algorithm (mock scoring)
-- [ ] Loan offer generation (amount, interest, duration)
-- [ ] Repayment tracking (outstanding balance, payment history)
-- [ ] Partner API endpoint to fetch merchant loan offers
+- [x] Django project and app scaffolding
+- [x] JWT-based merchant authentication
+- [x] Merchant registration/login endpoints
+- [x] Loan application submission API
+- [x] Basic underwriting algorithm (mock scoring)
+- [x] Loan offer generation (amount, interest, duration)
+- [x] Repayment tracking (outstanding balance, payment history)
+- [x] Partner API endpoint to fetch merchant loan offers
 
 ### ⚙️ Phase 2 – Infrastructure & DevOps
 - [ ] Dockerize the app
@@ -39,6 +39,15 @@ A Python-based microservice that simulates an embedded lending platform. Designe
 - [ ] Webhook support with retry & audit logging
 - [ ] Simulated Stripe payout/repayment integration
 - [ ] Admin dashboard (Django Admin or React)
+
+---
+
+## 🧱 System Architecture (Simplified)
+
+- `users/`: Handles merchant registration and authentication
+- `lending/`: Manages loan applications, offers, loans, and repayments
+- JWT authentication required for all endpoints
+- Partner API endpoint for external systems
 
 ---
 
