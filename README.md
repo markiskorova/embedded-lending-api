@@ -1,6 +1,6 @@
 # Embedded Lending API
 
-A Python-based backend service that simulates an embedded lending platform. Inspired by real-world tools like Parafin and Stripe Capital, this project allows merchants to apply for and manage loans through secure REST APIs.
+A Python-based backend service that simulates an embedded lending platform. Inspired by real-world tools like real-world embedded lending tools, this project allows merchants to apply for and manage loans through secure REST APIs. The system includes underwriting, loan offers, repayments, and partner-facing APIs.
 
 ---
 
@@ -17,28 +17,31 @@ A Python-based backend service that simulates an embedded lending platform. Insp
 
 ## 🗺️ Roadmap
 
-### ✅ Phase 1 – MVP (Core API)
-- [x] Django project and app scaffolding
-- [x] JWT-based merchant authentication
-- [x] Merchant registration/login endpoints
-- [x] Loan application submission API
-- [x] Basic underwriting algorithm (mock scoring)
-- [x] Loan offer generation (amount, interest, duration)
-- [x] Repayment tracking (outstanding balance, payment history)
-- [x] Partner API endpoint to fetch merchant loan offers
+### ✅ Phase 1: Core Lending Workflow MVP
+> Simulate the end-to-end lifecycle of a loan through a secure API
 
-### ⚙️ Phase 2 – Infrastructure & DevOps
-- [ ] Dockerize the app
-- [ ] Add PostgreSQL integration via Docker Compose
-- [ ] Use Terraform to deploy to AWS (EC2 + RDS)
-- [ ] GitHub Actions for CI/CD
+- [x] Merchant Registration & JWT Login
+- [x] Loan Application Submission
+- [x] Basic Underwriting Engine
+- [x] Loan Offer Generation
+- [x] Offer Acceptance
+- [x] Repayment Simulation
+- [x] Secure Partner API (Read-Only)
 
-### 🚀 Phase 3 – Enhancements
-- [ ] GraphQL API (Strawberry or Graphene)
-- [ ] Background risk scoring (Celery or Django-Q)
-- [ ] Webhook support with retry & audit logging
-- [ ] Simulated Stripe payout/repayment integration
-- [ ] Admin dashboard (Django Admin or React)
+### 🔐 Phase 2: Security, Logging, and Observability
+> Add features crucial to trust, compliance, and reliability
+
+- [ ] Field-Level Encryption (Sensitive Data)
+- [ ] Decision Logging
+- [ ] Request Logging & Audit Trail
+
+### ⚙️ Phase 3: Infrastructure & Extensibility
+> Add devops, cloud-readiness, and set up for scalability
+
+- [ ] Dockerized Deployment
+- [ ] PostgreSQL Integration (Production Ready)
+- [ ] GitHub Actions CI/CD
+- [ ] Terraform AWS Provisioning (Optional)
 
 ---
 
