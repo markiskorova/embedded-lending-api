@@ -1,6 +1,6 @@
 # Embedded Lending API
 
-A Python-based backend service that simulates an embedded lending platform. Inspired by real-world tools like real-world embedded lending tools, this project allows merchants to apply for and manage loans through secure REST APIs. The system includes underwriting, loan offers, repayments, and partner-facing APIs.
+A Python-based backend service that simulates an embedded lending platform. Inspired by real-world embedded lending tools, this project allows merchants to apply for and manage loans through secure REST APIs. The system includes underwriting, loan offers, repayments, and partner-facing APIs.
 
 ---
 
@@ -11,7 +11,7 @@ A Python-based backend service that simulates an embedded lending platform. Insp
 - **Database**: SQLite (dev), PostgreSQL (prod)
 - **Infrastructure**: Docker, Terraform (AWS)
 - **CI/CD**: GitHub Actions
-- **Optional**: GraphQL (graphene-django), Celery + Redis for background tasks
+- **Optional**: GraphQL (graphene-django), Celery + Redis for background tasks, Prometheus + Grafana (metrics dashboards)
 
 ---
 
@@ -34,6 +34,7 @@ A Python-based backend service that simulates an embedded lending platform. Insp
 - [ ] Field-Level Encryption (Sensitive Data)
 - [ ] Decision Logging
 - [ ] Request Logging & Audit Trail
+- [ ] Enhanced Observability (Prometheus + Grafana dashboards)
 
 ### ⚙️ Phase 3: Infrastructure & Extensibility
 > Add devops, cloud-readiness, and set up for scalability
